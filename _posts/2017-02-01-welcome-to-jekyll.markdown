@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Hell!"
+title:  "Hell Yeah!"
 date:   2017-02-01 10:31:23 -0500
 categories: first post
 ---

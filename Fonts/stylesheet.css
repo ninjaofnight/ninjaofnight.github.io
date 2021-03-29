@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'October Crow';
+    src: url('OctoberCrow.woff2') format('woff2'),
+        url('OctoberCrow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

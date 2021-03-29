@@ -4,34 +4,56 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="Fonts/stylesheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1 {font-family: "Comic Sans MS", "Comic Sans", cursive;
-		color: black;
-		-webkit-text-fill-color: white;
-		-webkit-text-stroke-width: 1px;
-		-webkit-text-stroke-color: black;
-		}
+body,h1 {font-family: 'October Crow';}
+
 body, html {height: 100%}
+
+body, div{
+cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
+}
+
 .bgimg {
   background-image: url('Media/wallpaper.gif');
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
+
+.rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'October Crow';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px!important;
+  
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.customCursor {
+    width:100%;
+    height:100%;
+	
+}
+
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    <a href="https://ninjaofnight.github.io/#portfolio"><img src="Media/phasmo.png" class="w3-image w3-round" style="width:50%"></a>
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-</div>
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+		<div class="w3-display-topleft w3-padding-large w3-xlarge">
+			<a href="https://ninjaofnight.github.io/#portfolio"><img src="Media/phasmo.png" class="w3-image w3-round" style="width:50%"></a>
+		</div>
+		<div class="w3-display-middle">
+			<button id="generate" class="w3-animate-top rainbow-text" style=margin-top:64px onclick="">GENERATE SOME GARBAGE</button>
+		</div>
+	</div>
 
 </body>
 </html>

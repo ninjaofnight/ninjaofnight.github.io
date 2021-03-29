@@ -14,7 +14,7 @@ var rare = ["Live, Laugh, Lovecraft","Laugh, Laugh, Cock"];
 var moreLike = ['cum','phas-cock-phobia','me when','spazmophobia','cock','amogus','pop cat','special needs','trans rights are human rights'];
 
 var desc = ['professional','amateur','lazy','dead','tired','depressed','special needs','six foot two','nine inch','boosted','chad','virgin','incel','scared','afraid','terrified'];
-var professions = ['ghost hunter','man who dies to ghosts','investigator','paranorman','ghost locator','man who wants to have sex with a ghost','league of legends player','van gremlin','man','woman','ghostbuster'];
+var professions = ['ghost hunter','man who dies to ghosts','investigator','paranorman','ghost locator','man who wants to have sex with a ghost','league of legends player','van gremlin','ghostbuster'];
 /*
 	Templates
 	

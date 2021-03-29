@@ -40,18 +40,23 @@
 /* Modal Header */
 .modal-header {
   padding: 2px 16px;
-  background-color: #11BEEC;
+  background-color: #36398C;
   color: white;
+  font-family: 'October Crow';
 }
 
 /* Modal Body */
-.modal-body {padding: 2px 16px;}
+.modal-body {
+	padding: 2px 16px;
+	font-family: "Lato", sans-serif;
+}
 
 /* Modal Footer */
 .modal-footer {
   padding: 2px 16px;
-  background-color: #11BEEC;
+  background-color: #36398C;
   color: white;
+  font-family: 'October Crow';
 }
 
 /* Modal Content */
@@ -64,7 +69,8 @@
   width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-name: animatetop;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  color: black;
 }
 
 /* Add Animation */

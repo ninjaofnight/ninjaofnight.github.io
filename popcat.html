@@ -32,7 +32,7 @@ body, html {
 
 	<marquee direction="down" width="100%" height="100%" behavior="alternate" style="border:solid">
 		<marquee behavior="alternate">
-			<img src="Media/popCatRight.jpg" class="w3-image w3-round" style="width:10%;" onclick="play()">
+			<img id="cat" src="Media/popCatRight.jpg" class="w3-image w3-round" style="width:10%;" onclick="play()">
 			<audio id="audio" src="Media/pop.mp3"></audio>
 			<script>
 				function play() {
@@ -40,28 +40,29 @@ body, html {
 					var audio = document.getElementById("audio");
 					audio.play();
 					
-					if (document.getElementById("audio").src == "Media/popCatRight.jpg") 
+					var image = document.getElementById('cat');
+					
+					if ( image.src.match("Media/popCatRight.jpg") ) 
 					{
-						document.getElementById("audio").src = "Media/popCatDown.jpg";
+						image.src = "Media/popCatDown.jpg";
 					}
-					else if (document.getElementById("audio").src == "Media/popCatDown.jpg") 
+					else if ( image.src.match("Media/popCatDown.jpg") ) 
 					{
-						document.getElementById("audio").src = "Media/popCatLeft.jpg";
+						image.src = "Media/popCatLeft.jpg";
 					}
-					else if (document.getElementById("audio").src == "Media/popCatLeft.jpg") 
+					else if ( image.src.match("Media/popCatLeft.jpg") )
 					{
-						document.getElementById("audio").src = "Media/popCatUp.jpg";
+						image.src = "Media/popCatUp.jpg";
 					}
-					else if (document.getElementById("audio").src == "Media/popCatUp.jpg") 
+					else if ( image.src.match("Media/popCatUp.jpg") )
 					{
-						document.getElementById("audio").src = "Media/popCatRight.jpg";
+						image.src = "Media/popCatRight.jpg";
 					}
 					
 				}
 			</script>
 		</marquee>
 	</marquee>
-
 </div>
 
 </body>

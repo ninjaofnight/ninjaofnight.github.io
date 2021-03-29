@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="Fonts/stylesheet.css">
 <link rel="stylesheet" href="StyleSheets/modal.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="jquery-3.6.0.js"></script>
 
 <head>
 <link rel="icon" href="Media/phasmo.png">
@@ -29,7 +30,7 @@
   pointer-events: none;
    z-index: 2;
   background: radial-gradient(
-    circle 12vmax at var(--cursorX) var(--cursorY),
+    circle 18vmax at var(--cursorX) var(--cursorY),
     rgba(0,0,0,0) 0%,
     rgba(0,0,0,.5) 75%,
     rgba(0,0,0,.95) 100%
@@ -47,10 +48,10 @@ cursor: none;
 */
 
 .bgimg {
-  background-image: url('Media/house.gif');
   min-height: 100%;
   background-position: center;
   background-size: cover;
+  filter: brightness(130%);
 }
 
 .rainbow-text {
@@ -91,13 +92,36 @@ function update(e){
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
 
+function getRandomImage()
+{
+    var images = [
+        "url('Media/Backgrounds/1.jpg')",
+		"url('Media/Backgrounds/2.jpg')",
+		"url('Media/Backgrounds/3.jpg')",
+		"url('Media/Backgrounds/4.jpg')",
+		"url('Media/Backgrounds/5.jpg')",
+		"url('Media/Backgrounds/6.jpg')",
+		"url('Media/Backgrounds/7.jpg')",
+		"url('Media/Backgrounds/8.jpg')"
+    ];
+    return images[Math.floor(Math.random() * 8)];
+}
+
+function setImage(){
+	console.log( $("#changeMe").css("background-image") );
+    $("#changeMe").css("background-image", getRandomImage());
+	console.log( $("#changeMe").css("background-image") );
+}
+
+$(document).ready( setImage );
+
 </script>
 
 <body>
 
-	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+	<div id="changeMe" style="background-image: url('Media/house.gif');" class="bgimg w3-display-container w3-animate-opacity w3-text-white">
 		<div class="w3-display-topleft w3-padding-large w3-xlarge">
-			<a href="https://ninjaofnight.github.io/#portfolio"><img src="Media/phasmo.png" class="w3-image w3-round" style="width:50%; cursor: none;"></a>
+			<a href="https://ninjaofnight.github.io/#portfolio"><img src="Media/phasmo.png" class="w3-image w3-round" style="width:50%;"></a>
 		</div>
 		<div class="w3-display-middle">
 		
@@ -136,6 +160,9 @@ document.addEventListener('touchmove',update)
 		// When the user clicks on the button, open the modal
 		btn.onclick = function() {
 			modal.style.display = "block";
+			
+			
+			
 		}
 		
 		// When the user clicks on <span> (x), close the modal

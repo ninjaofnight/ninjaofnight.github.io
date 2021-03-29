@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<title>popcat :3</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  cursor:url("Media/smol cat.jpg"), auto;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("Media/popcat.gif");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor:url("Media/smol cat.jpg"), auto;
+}
+</style>
+</head>
+<body>
+
+<div class="bg">
+
+	<marquee direction="down" width="100%" height="100%" behavior="alternate" style="border:solid">
+		<marquee behavior="alternate">
+			<img src="Media/pop cat.jpg" class="w3-image w3-round" style="width:10%;" onclick="play()">
+			<audio id="audio" src="Media/pop.mp3"></audio>
+			<script>
+				function play() {
+					var audio = document.getElementById("audio");
+					audio.play();
+				}
+			</script>
+		</marquee>
+	</marquee>
+
+</div>
+
+</body>
+</html>

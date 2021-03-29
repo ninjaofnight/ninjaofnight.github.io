@@ -7,12 +7,14 @@ var purchaseEquipment = ['Candle','Crucifix','Glow Stick','Head Mounted Camera',
 var purchaseCount = [4,2,2,4,4,2,4,2,2,4,4,4,4,3,5];
 
 var maps = ['Tanglewood Street House','Edgefield Street House','Ridgeview Road House','Grafton Farmhouse','Bleasdale Farmhouse','Brownstone High School','Prison','Asylum'];
-var nouns = ["Fucker", "Hater", "Lover", "Killer", "Identifier", "Sucker", "Ejaculator"];
-var exaggerated = ["Fucking", "Really", "Vehemently", "Strongly", "Aggressively", "Kinda"]
-var verbs = ["Hate", "Love", "Dislike", "Enjoy"]
-var rare = ["Live, Laugh, Lovecraftian","Laugh, Laugh, Cock"];
-var moreLike = ['cum','phas-cock-phobia','me when','spazphobia'];
+var nouns = ["Fucker", "Hater", "Lover", "Killer", "Identifier", "Locator", "Ejaculator"];
+//var exaggerated = ["Fucking", "Really", "Vehemently", "Strongly", "Aggressively", "Kinda"];
+//var verbs = ["Hate", "Love", "Dislike", "Enjoy"];
+var rare = ["Live, Laugh, Lovecraft","Laugh, Laugh, Cock"];
+var moreLike = ['cum','phas-cock-phobia','me when','spazmophobia','cock','amogus','pop cat','special needs','trans rights are human rights'];
 
+var desc = ['professional','amateur','lazy','dead','tired','depressed','special needs','six foot two','nine inch','boosted','chad','virgin','incel','scared','afraid','terrified'];
+var professions = ['ghost hunter','man who dies to ghosts','investigator','paranorman','ghost locator','man who wants to have sex with a ghost','league of legends player','van gremlin','man','woman','ghostbuster'];
 /*
 	Templates
 	
@@ -50,38 +52,23 @@ function generateHeader() {
 	
 	const x = Math.floor(Math.random() * 100);
 	switch (true) {
+	case (x < 2):
+		return "owo :3";
+        break;
     case (x < 5):
 		return get( "rare" );
         break;
-    case (x < 10):
-		return get( "ghosts" ) + " " + get( "nouns" );
-        break;
-	case (x < 20):
+    case (x < 20):
 		return "Fuck " + get( "maps" );
-		break;
-    case (x < 30):
-		return "I " + get( "exaggerated" ) + " " + get( "verbs" ) + " " + get( "maps" );
         break;
 	case (x < 35):
-		return "I " + get( "verbs" ) + " " + get( "maps" );
-        break;
-	case (x < 40):
-		return "I " + get( "exaggerated" ) + " " + get( "verbs" ) + " the " + get( "starterEquipment" );
-        break;
-	case (x < 45):
-		return "I " + get( "verbs" ) + " the " + get( "starterEquipment" );
-        break;
-	case (x < 50):
-		return "I " + get( "exaggerated" ) + " " + get( "verbs" ) + " the " + get( "purchaseEquipment" );
+		return "Fuck your " + get( "equipment" );
         break;
 	case (x < 55):
-		return "I " + get( "verbs" ) + " the " + get( "purchaseEquipment" );
+		return get( "desc" ) + " " + get( "professions" );
         break;
-	case (x < 60):
-		return "I " + get( "exaggerated" ) + " " + get( "verbs" ) + " " + get( "ghosts" ) + "s";
-        break;
-	case (x < 65):
-		return "I " + get( "verbs" ) + " " + get( "ghosts" ) + "s";
+	case (x < 80):
+		return get( "desc" ) + " " + get( "ghosts" );
         break;
 	case (x < 101):
 		return get( "ghosts" ) + " " + get( "nouns" );
@@ -97,65 +84,78 @@ function generateChallenge() {
 	/*
 	Titles
 	
-	Kill Me
-	Hoarder
-	Klepto
-	Say Cheese!
-	Oh Fuck
-	Sanic
-	The Ground Is Lava
-	Lightweight
-	Lights Out
-	Insane
-	Mental Health Day
-	Monophonic
-	DOOR STUCK
-	Too Cold
-	Tinnitus
-	Little Baby
-	Amish Haunting
-	Big Brother
-	Speedrun
-	Gaming
-	Isolated
+Kill Me
+Hoarder
+Klepto
+Say Cheese!
+Oh Fuck
+Sanic
+The Ground Is Lava
+Lightweight
+Lights Out
+Insane
+Mental Health Day
+Monophonic
+DOOR STUCK
+Too Cold
+Tinnitus
+Little Baby
+Amish Haunting
+Big Brother
+Speedrun
+Gaming
+Isolated
+Lucky Guess
+Fire Hazard
+Salty Surprise
+Drug Deal
+Incest
+Herr Doktor
+Movie Set
+Who Needs Light
 	
 	*/
-	
-	
-	
 	
 	/*
 	Details
 	
-	Say the ghost\'s name audibly with local chat during a hunt
-	Once the ghost\'s room is found, put every single item in there
-	You can\'t leave the house until you steal at least 15 objects
-	3 star picture of the ghost
-	Fully break a crucifix
-	No sprinting (optionally unbind it)
-	No placing equipment in the house ( except for Ghost Writing Book )
-	You can only carry 2 items at a time
-	You can\'t turn on any lights in the house ( flashlights etc. allowed )
-	You can\'t leave until all players have a sanity below 25%
-	Players with a sanity below 50% can\'t leave the van
-	All players must set audio to mono
-	No closing doors or closets once they are opened
-	You must immediately leave the room when you see freezing breath
-	Locate the ghosts room with the Parabolic Microphone ( small maps only )
-	Use starter equipment only, unless specified by another rule
-	No using any technology outside of the starter equipment, unless specified by another rule
-	Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to day in the van and monitor
-	Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )
-	Finish 2 objectives before looking for other evidence
-	You cannot hide in the same room as someone else during a hunt
+Say the ghost\'s name audibly with local chat during a hunt
+Once the ghost\'s room is found, put every single item in there
+You can\'t leave the house until you steal at least 15 objects
+Get at least 3 pictures worth 3 stars
+Fully break a crucifix
+No sprinting (optionally unbind it)
+No placing equipment in the house ( except for Ghost Writing Book )
+You can only carry 2 items at a time
+You can\'t turn on any lights in the house ( flashlights etc. allowed )
+You can\'t leave until all players have a sanity below 25%
+Players with a sanity below 50% can\'t leave the van
+All players must set audio to mono
+No closing doors or closets once they are opened
+You must immediately leave the room when you see freezing breath
+Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only
+Use starter equipment only, unless specified by another rule
+No using any technology outside of the starter equipment, unless specified by another rule
+Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor
+Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )
+Finish 2 objectives before looking for other evidence
+You cannot hide in the same room as someone else during a hunt
+Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior
+No using the lighter while inside of the house
+Place all salt as soon as the game starts, with a limit of one salt pile per room
+All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot
+Use all available smudge sticks at the start of the match to set the mood
+Designate one player to carry sanity pills, a thermometer, and a flashlight. They cannot use the pills, only hand them out
+Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed
+Players can only use the regular flashlights
 	
 	*/
 	
-	tempChallengeArray = ["Say the ghost's name audibly with local chat during a hunt","Once the ghost's room is found, put every single item in there","You can't leave the house until you steal at least 10 objects","3 star picture of the ghost","Fully break a crucifix","No sprinting (optionally unbind it)","No placing equipment in the house ( except for Ghost Writing Book )","You can only carry 2 items at a time","You can't turn on any lights in the house ( flashlights etc. allowed )","You can't leave until all players have a sanity below 25%","Players with a sanity below 50% can\'t leave the van","All players must set audio to mono","No closing doors or closets once they are opened","You must immediately leave the room when you see freezing breath"];
-	tempTitleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','Monophonic','DOOR STUCK','Too Cold'];
+	tempChallengeArray = ['Say the ghost\'s name audibly with local chat during a hunt','Once the ghost\'s room is found, put every single item in there','You can\'t leave the house until you steal at least 15 objects','Get at least 3 pictures worth 3 stars','Fully break a crucifix','No sprinting (optionally unbind it)','No placing equipment in the house ( except for Ghost Writing Book )','You can only carry 2 items at a time','You can\'t turn on any lights in the house ( flashlights etc. allowed )','You can\'t leave until all players have a sanity below 25%','Players with a sanity below 50% can\'t leave the van','All players must set audio to mono','No closing doors or closets once they are opened','You must immediately leave the room when you see freezing breath','Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only','Use starter equipment only, unless specified by another rule','No using any technology outside of the starter equipment, unless specified by another rule','Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor','Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )','Finish 2 objectives before looking for other evidence','You cannot hide in the same room as someone else during a hunt','Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior','No using the lighter while inside of the house','Place all salt as soon as the game starts, with a limit of one salt pile per room','All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot','Use all available smudge sticks at the start of the match to set the mood','Designate one player to carry sanity pills, a thermometer, and a flashlight. They cannot use the pills, only hand them out','Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed','Players can only use the regular flashlights'];
+	tempTitleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','Monophonic','DOOR STUCK','Too Cold','Tinnitus','Little Baby','Amish Haunting','Big Brother','Speedrun','Gaming','Isolated','Lucky Guess','Fire Hazard','Salty Surprise','Drug Deal','Incest','Herr Doktor','Movie Set','Who Needs Light'];
 	
-	challengeArray = ["Say the ghost's name audibly with local chat during a hunt","Once the ghost's room is found, put every single item in there","You can't leave the house until you steal at least 10 objects","3 star picture of the ghost","Fully break a crucifix","No sprinting (optionally unbind it)","No placing equipment in the house ( except for Ghost Writing Book )","You can only carry 2 items at a time","You can't turn on any lights in the house ( flashlights etc. allowed )","You can't leave until all players have a sanity below 25%","Players with a sanity below 50% can\'t leave the van","All players must set audio to mono","No closing doors or closets once they are opened","You must immediately leave the room when you see freezing breath"];
-	titleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','Monophonic','DOOR STUCK','Too Cold'];
+	challengeArray = ['Say the ghost\'s name audibly with local chat during a hunt','Once the ghost\'s room is found, put every single item in there','You can\'t leave the house until you steal at least 15 objects','Get at least 3 pictures worth 3 stars','Fully break a crucifix','No sprinting (optionally unbind it)','No placing equipment in the house ( except for Ghost Writing Book )','You can only carry 2 items at a time','You can\'t turn on any lights in the house ( flashlights etc. allowed )','You can\'t leave until all players have a sanity below 25%','Players with a sanity below 50% can\'t leave the van','All players must set audio to mono','No closing doors or closets once they are opened','You must immediately leave the room when you see freezing breath','Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only','Use starter equipment only, unless specified by another rule','No using any technology outside of the starter equipment, unless specified by another rule','Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor','Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )','Finish 2 objectives before looking for other evidence','You cannot hide in the same room as someone else during a hunt','Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior','No using the lighter while inside of the house','Place all salt as soon as the game starts, with a limit of one salt pile per room','All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot','Use all available smudge sticks at the start of the match to set the mood','Designate one player to carry sanity pills, a thermometer, and a flashlight. They cannot use the pills, only hand them out','Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed','Players can only use the regular flashlights'];
+	titleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','Monophonic','DOOR STUCK','Too Cold','Tinnitus','Little Baby','Amish Haunting','Big Brother','Speedrun','Gaming','Isolated','Lucky Guess','Fire Hazard','Salty Surprise','Drug Deal','Incest','Herr Doktor','Movie Set','Who Needs Light'];
 	
 	
 	challenge = "";

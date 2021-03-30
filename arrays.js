@@ -197,7 +197,7 @@ Keep the site clean! When the ghost moves something, put it back where it came f
 	challengeArray = tempChallengeArray;
 	titleArray = tempTitleArray;
 	
-	$("#body").html( challenge );
 	
 }
 
+	document.getElementById("body").innerHTML = challenge;

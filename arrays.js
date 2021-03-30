@@ -122,6 +122,12 @@ Bloody Mary
 Hide And Seek
 5th Grade Birthday Party
 Bustin Makes Me Feel Good
+Jake Paul
+Radio Silence
+What Ghost?
+Radio Loudness
+Haunted House
+MTV Cribs
 	
 	*/
 	
@@ -166,6 +172,12 @@ Before leaving the site, each player must find a bathroom, turn off all lights/f
 Trigger at least 2 hunts
 Trigger a hunt using only fortnite terminology
 Chant \"Bustin\'\" whenever you are in the ghost\'s room
+Get a picture of a dead body
+No walkie-talkies allowed, only local chat ( this rule is void for discord users )
+Hold conversation during hunts. Bonus points for taunting the ghost!
+Only global chat allowed, no local chat ( this rule is void for discord users )
+All players must move as a group. Leave nobody behind!
+One player must guide the others around the site like a house tour, describing it like they live there
 
 	*/
 	
@@ -207,7 +219,14 @@ Chant \"Bustin\'\" whenever you are in the ghost\'s room
 	'Before leaving the site, each player must find a bathroom, turn off all lights/flashlights, chant bloody mary three times, and then wait in there for at least 5 seconds',
 	'Trigger at least 2 hunts',
 	'Trigger a hunt using only fortnite terminology',
-	'Chant \"Bustin\'\" whenever you are in the ghost\'s room'];
+	'Chant \"Bustin\'\" whenever you are in the ghost\'s room',
+	'Get a picture of a dead body',
+	'No walkie-talkies allowed, only local chat ( this rule is void for discord users )',
+	'Hold conversation during hunts. Bonus points for taunting the ghost!',
+	'Only global chat allowed, no local chat ( this rule is void for discord users )',
+	'All players must move as a group. Leave nobody behind!',
+	'One player must guide the others around the site like a house tour, describing it like they live there'
+	];
 
 	tempTitleArray = 
 	['Kill Me',
@@ -247,7 +266,13 @@ Chant \"Bustin\'\" whenever you are in the ghost\'s room
 	'Bloody Mary',
 	'Hide And Seek',
 	'5th Grade Birthday Party',
-	'Bustin Makes Me Feel Good'];
+	'Bustin Makes Me Feel Good',
+	'Jake Paul',
+	'Radio Silence',
+	'What Ghost?',
+	'Radio Loudness',
+	'Haunted House',
+	'MTV Cribs'];
 	
 	challengeArray = 
 	['Each player must say the ghost\'s name audibly with local chat during a hunt',
@@ -287,7 +312,14 @@ Chant \"Bustin\'\" whenever you are in the ghost\'s room
 	'Before leaving the site, each player must find a bathroom, turn off all lights/flashlights, chant bloody mary three times, and then wait in there for at least 5 seconds',
 	'Trigger at least 2 hunts',
 	'Trigger a hunt using only fortnite terminology',
-	'Chant \"Bustin\'\" whenever you are in the ghost\'s room'];
+	'Chant \"Bustin\'\" whenever you are in the ghost\'s room',
+	'Get a picture of a dead body',
+	'No walkie-talkies allowed, only local chat ( this rule is void for discord users )',
+	'Hold conversation during hunts. Bonus points for taunting the ghost!',
+	'Only global chat allowed, no local chat ( this rule is void for discord users )',
+	'All players must move as a group. Leave nobody behind!',
+	'One player must guide the others around the site like a house tour, describing it like they live there'
+	];
 
 	titleArray = 
 	['Kill Me',
@@ -327,7 +359,13 @@ Chant \"Bustin\'\" whenever you are in the ghost\'s room
 	'Bloody Mary',
 	'Hide And Seek',
 	'5th Grade Birthday Party',
-	'Bustin Makes Me Feel Good'];
+	'Bustin Makes Me Feel Good',
+	'Jake Paul',
+	'Radio Silence',
+	'What Ghost?',
+	'Radio Loudness',
+	'Haunted House',
+	'MTV Cribs'];
 	
 	
 	challenge = "";

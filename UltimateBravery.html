@@ -109,6 +109,40 @@ function setImage(){
   document.getElementById("changeMe").style.backgroundImage = getRandomImage();
 }
 
+var futureDate = new Date();
+futureDate.setDate(futureDate.getDate() + 10);
+
+function initLight() {
+  if (!document.cookie.split(';').some((item) => item.trim().startsWith('lights='))) {
+    document.cookie = "lights=off;SameSite=Strict; expires=" + futureDate.toGMTString() + "; path=/UltimateBravery.html";
+  } else if (document.cookie.split('; ').find(row => row.startsWith('lights=')).split('=')[1] == "on") {
+    lightsOn();
+  }
+}
+
+function lightsOn() {
+  var styleElem = document.head.appendChild(document.createElement("style"));
+  styleElem.innerHTML = ":root::before { display:none; } \nbody,h1,h2,h3 { cursor: auto; } ";
+  styleElem.id = "lightswitch";
+  document.getElementById('generate').style.cursor = "pointer";
+  document.cookie = "lights=on;SameSite=Strict; expires=" + futureDate.toGMTString() + "; path=/UltimateBravery.html";
+}
+
+function lightsOff() {
+  document.getElementById("lightswitch").remove();
+  document.getElementById('generate').style.cursor = "none";
+  document.cookie = "lights=off;SameSite=Strict; expires=" + futureDate.toGMTString() + "; path=/UltimateBravery.html";
+}
+
+function toggleLight() {
+  if (document.cookie.split('; ').find(row => row.startsWith('lights=')).split('=')[1] == "off") {
+    lightsOn();
+  } else if (document.cookie.split('; ').find(row => row.startsWith('lights=')).split('=')[1] == "on") {
+    lightsOff();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', initLight);
 document.addEventListener('DOMContentLoaded', setImage);
 
 </script>
@@ -180,6 +214,9 @@ document.addEventListener('DOMContentLoaded', setImage);
 
 		</script>
 		
+    <div class="w3-display-topright w3-padding-large">
+      <a style="cursor:pointer;font-family:sans-serif;" type="button" name="button" onclick="toggleLight()">💡 Lightswitch</a>
+    </div>
 		
 	</div>
 

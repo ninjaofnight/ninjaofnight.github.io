@@ -64,10 +64,10 @@ function generateHeader() {
 	case (x < 35):
 		return "Fuck your " + get( "equipment" );
         break;
-	case (x < 55):
+	case (x < 80):
 		return get( "desc" ) + " " + get( "professions" );
         break;
-	case (x < 80):
+	case (x < 90):
 		return get( "desc" ) + " " + get( "ghosts" );
         break;
 	case (x < 101):
@@ -310,6 +310,13 @@ Bring every single piece of equipment, and use as much of it as you can
 		// Weighted random
 		if( choice > Math.floor( challengeArray.length / 2 ) ){
 			choice = Math.floor(Math.random() * challengeArray.length );
+			
+			if( choice > Math.floor( challengeArray.length / 2 ) ){
+				
+				choice = Math.floor(Math.random() * challengeArray.length );
+
+			}
+			
 		}
 		
 		

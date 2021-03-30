@@ -90,19 +90,14 @@ function update(e){
 document.addEventListener('mousemove',update)
 document.addEventListener('touchmove',update)
 
+for (var i = 0; i < 8; i++) {
+  var img = new Image();
+  img.src = "Media/Backgrounds/" + (i+1) + ".jpg"
+}
+
 function getRandomImage()
 {
-    var images = [
-        "url('Media/Backgrounds/1.jpg')",
-		"url('Media/Backgrounds/2.jpg')",
-		"url('Media/Backgrounds/3.jpg')",
-		"url('Media/Backgrounds/4.jpg')",
-		"url('Media/Backgrounds/5.jpg')",
-		"url('Media/Backgrounds/6.jpg')",
-		"url('Media/Backgrounds/7.jpg')",
-		"url('Media/Backgrounds/8.jpg')"
-    ];
-    return images[Math.floor(Math.random() * 8)];
+    return "url('Media/Backgrounds/" + String(Math.floor(Math.random() * 8) + 1) + ".jpg'";
 }
 
 function setImage(){

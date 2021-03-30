@@ -118,6 +118,10 @@ Bone Hurting Juice
 ADHD
 Tunnel Vision
 Tidy
+Bloody Mary
+Hide And Seek
+5th Grade Birthday Party
+Bustin Makes Me Feel Good
 	
 	*/
 	
@@ -158,14 +162,172 @@ Once you find the chicken bone, you are not allowed to enter that room or pick i
 Swap out all of your equipment every time you enter the van
 Once you identify the ghost\'s room, you are only allowed to have the light in that room on
 Keep the site clean! When the ghost moves something, put it back where it came from. Leave no equipment behind!
+Before leaving the site, each player must find a bathroom, turn off all lights/flashlights, chant bloody mary three times, and then wait in there for at least 5 seconds
+Trigger at least 2 hunts
+Trigger a hunt using only fortnite terminology
+Chant \"Bustin\'\" whenever you are in the ghost\'s room
 
 	*/
 	
-	tempChallengeArray = ['Each player must say the ghost\'s name audibly with local chat during a hunt','Once the ghost\'s room is found, put every single item in there','You can\'t leave the house until you steal at least 15 objects','Get at least 3 pictures worth 3 stars','Fully break a crucifix','No sprinting (optionally unbind it)','No placing equipment in the house ( except for Ghost Writing Book )','You can only carry 2 items at a time','You can\'t turn on any lights in the house ( flashlights etc. allowed )','You can\'t leave until all players have a sanity below 25%','Players with a sanity below 50% can\'t leave the van','No closing doors or closets once they are opened','You must immediately leave the room when you see freezing breath','Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only','Use starter equipment only, unless specified by another rule','No using any technology outside of the starter equipment, unless specified by another rule','Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor','Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )','Finish 2 objectives before looking for other evidence','You cannot hide in the same room as someone else during a hunt','Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior','No using the lighter while inside of the house','Place all salt as soon as the game starts, with a limit of one salt pile per room','All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot','Use all available smudge sticks at the start of the match to set the mood','Designate one player to be the Doktor. They must always carry sanity pills, a thermometer, and a flashlight. They have complete control over who gets prescribed pills, and you must be prescribed pills to use them','Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed','Players can only use the regular flashlights','Find a tool in the garage at the start of the game, and carry it around with you. If the car alarm goes off, you can put it back in the garage ( requires a garage )','Grab a stuffed animal at the start of the game, and carry it around with you. If you hear a child laugh, you can put it back ( requires a kid\'s room )','Once you find the chicken bone, you are not allowed to enter that room or pick it up ( If the bone is in a hallway, this rule is voided )','Swap out all of your equipment every time you enter the van','Once you identify the ghost\'s room, you are only allowed to have the light in that room on','Keep the site clean! When the ghost moves something, put it back where it came from. Leave no equipment behind!'];
-	tempTitleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','DOOR STUCK','Too Cold','Tinnitus','Little Baby','Amish Haunting','Big Brother','Speedrun','Gaming','Isolated','Lucky Guess','Fire Hazard','Salty Surprise','Drug Deal','Incest','Herr Doktor','Movie Set','Who Needs Light','Mechanic','Best Friends','Bone Hurting Juice','ADHD','Tunnel Vision','Tidy'];
+	tempChallengeArray = 
+	['Each player must say the ghost\'s name audibly with local chat during a hunt',
+	'Once the ghost\'s room is found, put every single item in there',
+	'You can\'t leave the house until you steal at least 15 objects',
+	'Get at least 3 pictures worth 3 stars',
+	'Fully break a crucifix',
+	'No sprinting (optionally unbind it)',
+	'No placing equipment in the house ( except for Ghost Writing Book )',
+	'You can only carry 2 items at a time',
+	'You can\'t turn on any lights in the house ( flashlights etc. allowed )',
+	'You can\'t leave until all players have a sanity below 25%',
+	'Players with a sanity below 50% can\'t leave the van',
+	'No closing doors or closets once they are opened',
+	'You must immediately leave the room when you see freezing breath',
+	'Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only',
+	'Use starter equipment only, unless specified by another rule',
+	'No using any technology outside of the starter equipment, unless specified by another rule',
+	'Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor',
+	'Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )',
+	'Finish 2 objectives before looking for other evidence',
+	'You cannot hide in the same room as someone else during a hunt',
+	'Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior',
+	'No using the lighter while inside of the house',
+	'Place all salt as soon as the game starts, with a limit of one salt pile per room',
+	'All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot',
+	'Use all available smudge sticks at the start of the match to set the mood',
+	'Designate one player to be the Doktor. They must always carry sanity pills, a thermometer, and a flashlight. They have complete control over who gets prescribed pills, and you must be prescribed pills to use them',
+	'Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed',
+	'Players can only use the regular flashlights',
+	'Find a tool in the garage at the start of the game, and carry it around with you. If the car alarm goes off, you can put it back in the garage ( requires a garage )',
+	'Grab a stuffed animal at the start of the game, and carry it around with you. If you hear a child laugh, you can put it back ( requires a kid\'s room )',
+	'Once you find the chicken bone, you are not allowed to enter that room or pick it up ( If the bone is in a hallway, this rule is voided )',
+	'Swap out all of your equipment every time you enter the van',
+	'Once you identify the ghost\'s room, you are only allowed to have the light in that room on',
+	'Keep the site clean! When the ghost moves something, put it back where it came from. Leave no equipment behind!',
+	'Before leaving the site, each player must find a bathroom, turn off all lights/flashlights, chant bloody mary three times, and then wait in there for at least 5 seconds',
+	'Trigger at least 2 hunts',
+	'Trigger a hunt using only fortnite terminology',
+	'Chant \"Bustin\'\" whenever you are in the ghost\'s room'];
+
+	tempTitleArray = 
+	['Kill Me',
+	'Hoarder',
+	'Klepto',
+	'Say Cheese!',
+	'Oh Fuck',
+	'Sanic',
+	'The Ground Is Lava',
+	'Lightweight',
+	'Lights Out',
+	'Insane',
+	'Mental Health Day',
+	'DOOR STUCK',
+	'Too Cold',
+	'Tinnitus',
+	'Little Baby',
+	'Amish Haunting',
+	'Big Brother',
+	'Speedrun',
+	'Gaming',
+	'Isolated',
+	'Lucky Guess',
+	'Fire Hazard',
+	'Salty Surprise',
+	'Drug Deal',
+	'Incest',
+	'Herr Doktor',
+	'Movie Set',
+	'Who Needs Light',
+	'Mechanic',
+	'Best Friends',
+	'Bone Hurting Juice',
+	'ADHD',
+	'Tunnel Vision',
+	'Tidy',
+	'Bloody Mary',
+	'Hide And Seek',
+	'5th Grade Birthday Party',
+	'Bustin Makes Me Feel Good'];
 	
-	challengeArray = ['Each player must say the ghost\'s name audibly with local chat during a hunt','Once the ghost\'s room is found, put every single item in there','You can\'t leave the house until you steal at least 15 objects','Get at least 3 pictures worth 3 stars','Fully break a crucifix','No sprinting (optionally unbind it)','No placing equipment in the house ( except for Ghost Writing Book )','You can only carry 2 items at a time','You can\'t turn on any lights in the house ( flashlights etc. allowed )','You can\'t leave until all players have a sanity below 25%','Players with a sanity below 50% can\'t leave the van','No closing doors or closets once they are opened','You must immediately leave the room when you see freezing breath','Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only','Use starter equipment only, unless specified by another rule','No using any technology outside of the starter equipment, unless specified by another rule','Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor','Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )','Finish 2 objectives before looking for other evidence','You cannot hide in the same room as someone else during a hunt','Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior','No using the lighter while inside of the house','Place all salt as soon as the game starts, with a limit of one salt pile per room','All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot','Use all available smudge sticks at the start of the match to set the mood','Designate one player to be the Doktor. They must always carry sanity pills, a thermometer, and a flashlight. They have complete control over who gets prescribed pills, and you must be prescribed pills to use them','Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed','Players can only use the regular flashlights','Find a tool in the garage at the start of the game, and carry it around with you. If the car alarm goes off, you can put it back in the garage ( requires a garage )','Grab a stuffed animal at the start of the game, and carry it around with you. If you hear a child laugh, you can put it back ( requires a kid\'s room )','Once you find the chicken bone, you are not allowed to enter that room or pick it up ( If the bone is in a hallway, this rule is voided )','Swap out all of your equipment every time you enter the van','Once you identify the ghost\'s room, you are only allowed to have the light in that room on','Keep the site clean! When the ghost moves something, put it back where it came from. Leave no equipment behind!'];
-	titleArray = ['Kill Me','Hoarder','Klepto','Say Cheese!','Oh Fuck','Sanic','The Ground Is Lava','Lightweight','Lights Out','Insane','Mental Health Day','DOOR STUCK','Too Cold','Tinnitus','Little Baby','Amish Haunting','Big Brother','Speedrun','Gaming','Isolated','Lucky Guess','Fire Hazard','Salty Surprise','Drug Deal','Incest','Herr Doktor','Movie Set','Who Needs Light','Mechanic','Best Friends','Bone Hurting Juice','ADHD','Tunnel Vision','Tidy'];
+	challengeArray = 
+	['Each player must say the ghost\'s name audibly with local chat during a hunt',
+	'Once the ghost\'s room is found, put every single item in there',
+	'You can\'t leave the house until you steal at least 15 objects',
+	'Get at least 3 pictures worth 3 stars',
+	'Fully break a crucifix',
+	'No sprinting (optionally unbind it)',
+	'No placing equipment in the house ( except for Ghost Writing Book )',
+	'You can only carry 2 items at a time',
+	'You can\'t turn on any lights in the house ( flashlights etc. allowed )',
+	'You can\'t leave until all players have a sanity below 25%',
+	'Players with a sanity below 50% can\'t leave the van',
+	'No closing doors or closets once they are opened',
+	'You must immediately leave the room when you see freezing breath',
+	'Locate the ghosts room ( or the general area ) with the Parabolic Microphone - small maps only',
+	'Use starter equipment only, unless specified by another rule',
+	'No using any technology outside of the starter equipment, unless specified by another rule',
+	'Purchase and set up every single camera and head mounted camera before doing anything else. Pick one person to stay in the van and monitor',
+	'Once you enter, no leaving the house until you identify the ghost ( tip: leave someone in the van for orbs )',
+	'Finish 2 objectives before looking for other evidence',
+	'You cannot hide in the same room as someone else during a hunt',
+	'Once you find 2 pieces of evidence, you are not allowed to get the third. Guess the ghost from behavior',
+	'No using the lighter while inside of the house',
+	'Place all salt as soon as the game starts, with a limit of one salt pile per room',
+	'All players must pick up a sanity pill bottle at the start of the game. Once you use the pills, you can put other equipment in that slot',
+	'Use all available smudge sticks at the start of the match to set the mood',
+	'Designate one player to be the Doktor. They must always carry sanity pills, a thermometer, and a flashlight. They have complete control over who gets prescribed pills, and you must be prescribed pills to use them',
+	'Purchase and set up every single camera and tripod at the start of the game. No moving tripods once they are placed',
+	'Players can only use the regular flashlights',
+	'Find a tool in the garage at the start of the game, and carry it around with you. If the car alarm goes off, you can put it back in the garage ( requires a garage )',
+	'Grab a stuffed animal at the start of the game, and carry it around with you. If you hear a child laugh, you can put it back ( requires a kid\'s room )',
+	'Once you find the chicken bone, you are not allowed to enter that room or pick it up ( If the bone is in a hallway, this rule is voided )',
+	'Swap out all of your equipment every time you enter the van',
+	'Once you identify the ghost\'s room, you are only allowed to have the light in that room on',
+	'Keep the site clean! When the ghost moves something, put it back where it came from. Leave no equipment behind!',
+	'Before leaving the site, each player must find a bathroom, turn off all lights/flashlights, chant bloody mary three times, and then wait in there for at least 5 seconds',
+	'Trigger at least 2 hunts',
+	'Trigger a hunt using only fortnite terminology',
+	'Chant \"Bustin\'\" whenever you are in the ghost\'s room'];
+
+	titleArray = 
+	['Kill Me',
+	'Hoarder',
+	'Klepto',
+	'Say Cheese!',
+	'Oh Fuck',
+	'Sanic',
+	'The Ground Is Lava',
+	'Lightweight',
+	'Lights Out',
+	'Insane',
+	'Mental Health Day',
+	'DOOR STUCK',
+	'Too Cold',
+	'Tinnitus',
+	'Little Baby',
+	'Amish Haunting',
+	'Big Brother',
+	'Speedrun',
+	'Gaming',
+	'Isolated',
+	'Lucky Guess',
+	'Fire Hazard',
+	'Salty Surprise',
+	'Drug Deal',
+	'Incest',
+	'Herr Doktor',
+	'Movie Set',
+	'Who Needs Light',
+	'Mechanic',
+	'Best Friends',
+	'Bone Hurting Juice',
+	'ADHD',
+	'Tunnel Vision',
+	'Tidy',
+	'Bloody Mary',
+	'Hide And Seek',
+	'5th Grade Birthday Party',
+	'Bustin Makes Me Feel Good'];
 	
 	
 	challenge = "";

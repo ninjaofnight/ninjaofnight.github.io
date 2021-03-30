@@ -199,7 +199,7 @@ Keep the house clean! When the ghost moves something, put it back where it came 
 	challengeArray = tempChallengeArray;
 	titleArray = tempTitleArray;
 	
-	$("#body").html( challenge );
 	
 }
 
+	document.getElementById("body").innerHTML = challenge;

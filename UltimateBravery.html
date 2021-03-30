@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="StyleSheets/modal.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-<script src="jquery-3.6.0.js"></script>
 <script src="arrays.js"></script>
 
 <head>
@@ -107,10 +106,10 @@ function getRandomImage()
 }
 
 function setImage(){
-    $("#changeMe").css("background-image", getRandomImage());
+  document.getElementById("changeMe").style.backgroundImage = getRandomImage();
 }
 
-$(document).ready( setImage );
+document.addEventListener('DOMContentLoaded', setImage);
 
 </script>
 
@@ -159,9 +158,9 @@ $(document).ready( setImage );
 		
 			modal.style.display = "block";
 			
-			$("#title").html( generateHeader() );
-			$("#footer").html( "Phasmophobia? More Like " + get( "moreLike" ) );
 			
+      document.getElementById("title").textContent = generateHeader();
+      document.getElementById("footer").textContent = "Phasmophobia? More Like " + get( "moreLike" );
 			generateChallenge();
 			
 		}

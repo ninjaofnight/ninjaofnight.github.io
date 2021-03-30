@@ -308,7 +308,7 @@ Bring every single piece of equipment, and use as much of it as you can
 		choice = Math.floor(Math.random() * challengeArray.length );
 		
 		// Weighted random
-		if( choice > floor( challengeArray.length / 2 ) ){
+		if( choice > Math.floor( challengeArray.length / 2 ) ){
 			choice = Math.floor(Math.random() * challengeArray.length );
 		}
 		

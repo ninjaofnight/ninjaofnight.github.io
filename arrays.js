@@ -122,7 +122,7 @@ Bloody Mary
 Hide And Seek
 5th Grade Birthday Party
 Bustin Makes Me Feel Good
-Jake Paul
+Logan Paul
 Radio Silence
 What Ghost?
 Radio Loudness
@@ -267,7 +267,7 @@ One player must guide the others around the site like a house tour, describing i
 	'Hide And Seek',
 	'5th Grade Birthday Party',
 	'Bustin Makes Me Feel Good',
-	'Jake Paul',
+	'Logan Paul',
 	'Radio Silence',
 	'What Ghost?',
 	'Radio Loudness',
@@ -360,7 +360,7 @@ One player must guide the others around the site like a house tour, describing i
 	'Hide And Seek',
 	'5th Grade Birthday Party',
 	'Bustin Makes Me Feel Good',
-	'Jake Paul',
+	'Logan Paul',
 	'Radio Silence',
 	'What Ghost?',
 	'Radio Loudness',

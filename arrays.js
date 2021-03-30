@@ -98,7 +98,7 @@ Mental Health Day
 DOOR STUCK
 Too Cold
 Tinnitus
-Little Baby
+F2P
 Amish Haunting
 Big Brother
 Speedrun
@@ -128,7 +128,10 @@ What Ghost?
 Radio Loudness
 Haunted House
 MTV Cribs
-	
+Heavyweight
+Penny Pincher
+P2W
+
 	*/
 	
 	/*
@@ -178,8 +181,61 @@ Hold conversation during hunts. Bonus points for taunting the ghost!
 Only global chat allowed, no local chat ( this rule is void for discord users )
 All players must move as a group. Leave nobody behind!
 One player must guide the others around the site like a house tour, describing it like they live there
+You cannot leave the site unless all of your equipment slots are full
+Each player can bring $200 in equipment max, and players can only use the equipment they bring ( starter equipment price not included, and can be used by everyone )
+Bring every single piece of equipment, and use as much of it as you can
 
 	*/
+	
+	titleArray = 
+	['Kill Me',
+	'Hoarder',
+	'Klepto',
+	'Say Cheese!',
+	'Oh Fuck',
+	'Sanic',
+	'The Ground Is Lava',
+	'Lightweight',
+	'Lights Out',
+	'Insane',
+	'Mental Health Day',
+	'DOOR STUCK',
+	'Too Cold',
+	'Tinnitus',
+	'F2P',
+	'Amish Haunting',
+	'Big Brother',
+	'Speedrun',
+	'Gaming',
+	'Isolated',
+	'Lucky Guess',
+	'Fire Hazard',
+	'Salty Surprise',
+	'Drug Deal',
+	'Incest',
+	'Herr Doktor',
+	'Movie Set',
+	'Who Needs Light',
+	'Mechanic',
+	'Best Friends',
+	'Bone Hurting Juice',
+	'ADHD',
+	'Tunnel Vision',
+	'Tidy',
+	'Bloody Mary',
+	'Hide And Seek',
+	'5th Grade Birthday Party',
+	'Bustin Makes Me Feel Good',
+	'Logan Paul',
+	'Radio Silence',
+	'What Ghost?',
+	'Radio Loudness',
+	'Haunted House',
+	'MTV Cribs',
+	'Heavyweight',
+	'Penny Pincher',
+	'P2W'
+	];
 	
 	challengeArray = 
 	['Each player must say the ghost\'s name audibly with local chat during a hunt',
@@ -225,54 +281,11 @@ One player must guide the others around the site like a house tour, describing i
 	'Hold conversation during hunts. Bonus points for taunting the ghost!',
 	'Only global chat allowed, no local chat ( this rule is void for discord users )',
 	'All players must move as a group. Leave nobody behind!',
-	'One player must guide the others around the site like a house tour, describing it like they live there'
+	'One player must guide the others around the site like a house tour, describing it like they live there',
+	'You cannot leave the site unless all of your equipment slots are full',
+	'Each player can bring $200 in equipment max, and players can only use the equipment they bring ( starter equipment price not included, and can be used by everyone )',
+	'Bring every single piece of equipment, and use as much of it as you can'
 	];
-
-	titleArray = 
-	['Kill Me',
-	'Hoarder',
-	'Klepto',
-	'Say Cheese!',
-	'Oh Fuck',
-	'Sanic',
-	'The Ground Is Lava',
-	'Lightweight',
-	'Lights Out',
-	'Insane',
-	'Mental Health Day',
-	'DOOR STUCK',
-	'Too Cold',
-	'Tinnitus',
-	'Little Baby',
-	'Amish Haunting',
-	'Big Brother',
-	'Speedrun',
-	'Gaming',
-	'Isolated',
-	'Lucky Guess',
-	'Fire Hazard',
-	'Salty Surprise',
-	'Drug Deal',
-	'Incest',
-	'Herr Doktor',
-	'Movie Set',
-	'Who Needs Light',
-	'Mechanic',
-	'Best Friends',
-	'Bone Hurting Juice',
-	'ADHD',
-	'Tunnel Vision',
-	'Tidy',
-	'Bloody Mary',
-	'Hide And Seek',
-	'5th Grade Birthday Party',
-	'Bustin Makes Me Feel Good',
-	'Logan Paul',
-	'Radio Silence',
-	'What Ghost?',
-	'Radio Loudness',
-	'Haunted House',
-	'MTV Cribs'];
 	
 	tempChallenges = [];
 	tempTitles = [];
